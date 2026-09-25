@@ -3,7 +3,9 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-dark-purple text-white px-4 pt-10 pb-40 md:rounded-b-[100px] rounded-b-[50px] relative z-0">
+    <header className="hero relative z-0 overflow-visible bg-dark-purple px-4 pt-8 pb-36 text-white md:pt-12 md:pb-48">
+      <Image src="/images/bg-pattern-1.svg" alt="" width={341} height={317} className="pointer-events-none absolute -left-28 top-28 hidden w-64 opacity-80 md:block" aria-hidden="true" />
+      <Image src="/images/bg-pattern-2.svg" alt="" width={174} height={181} className="pointer-events-none absolute -right-16 top-48 hidden w-36 opacity-80 md:block" aria-hidden="true" />
       <nav className="max-w-6xl mx-auto flex items-center justify-between">
         <Image
           src="/images/logo-light.svg"
@@ -20,13 +22,13 @@ export default function Header() {
         </Link>
       </nav>
 
-      <div className="max-w-3xl mx-auto text-center mt-16 md:mt-24">
-        <h1 className="text-5xl md:text-7xl mb-10 leading-tight text-white">
-          Data <span className="underline decoration-eucalyptus underline-offset-8">tailored</span> to your needs.
+      <div className="relative z-10 mx-auto mt-14 max-w-3xl text-center md:mt-20">
+        <h1 className="mb-8 text-5xl leading-tight text-white md:mb-10 md:text-7xl">
+          Data <span className="underline decoration-eucalyptus underline-offset-8">tailored</span> to<br className="md:hidden" /> your needs.
         </h1>
         <Link
           href="#"
-          className="inline-block bg-eucalyptus text-dark-purple font-bold py-3 px-6 mt-4 hover:bg-transparent hover:text-eucalyptus border-2 border-transparent hover:border-eucalyptus transition-all"
+          className="inline-block border-2 border-eucalyptus bg-eucalyptus px-6 py-3 font-bold text-dark-purple transition-all hover:bg-transparent hover:text-eucalyptus"
         >
           Learn more
         </Link>

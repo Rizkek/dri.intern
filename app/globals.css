@@ -5,10 +5,36 @@
   body {
     /* background default */
     @apply bg-ghost-white text-davys-grey antialiased;
+    overflow-x: hidden;
   }
   
   /* heading otomatis */
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif text-dark-purple;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    width: 110%;
+    bottom: -35px;
+    height: 72px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #24053e;
+  }
+
+  .features::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -35px;
+    width: 100%;
+    height: 72px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #fcf8ff;
   }
 }
