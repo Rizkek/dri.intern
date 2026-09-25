@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@config "../tailwind.config.cjs";
+
+@layer base {
+  body {
+    /* background default */
+    @apply bg-ghost-white text-davys-grey antialiased;
+  }
+  
+  /* heading otomatis */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-dark-purple;
+  }
+}

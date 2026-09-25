@@ -1,16 +1,16 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import localFont from 'next/font/local'
+import {Manrope, Fraunces} from 'next/font/google';
 
-const manrope = localFont({
-    src: '../public/fonts/manrope/Manrope-VariableFont_wght.ttf', 
+const manrope = Manrope({
+    subsets: ['latin'], 
     variable: '--font-manrope',
     display: 'swap',
 })
 
-const fraunces = localFont({
-    src: '../public/fonts/manrope/Manrope-VariableFont_wght.ttf', 
-    variable: '--font-manrope',
+const fraunces = Fraunces({
+    subsets: ['latin'], 
+    variable: '--font-fraunces',
     display: 'swap',
 })
 
